@@ -9,6 +9,8 @@ int main(int argc, char * argv[])
     pid_t pid, finished_son;
     pid = fork();
     int status; 
+    (void)argc; // agregamos (void)argc para indicar que la variable no se utiliza explícitamente
+
     
     if (pid == 0)
         {

@@ -2,11 +2,12 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <stdlib.h> 
+#include <unistd.h>
 
 int main(void)
 {
-    printf("int %d bytes\n", sizeof(int)); // Cant de bytes que va a utilizar el SO para un entero corto. 
-    pid_t pidhijo, pidtermi;
+    printf("int %zu bytes\n", sizeof(int)); // Cant de bytes que va a utilizar el SO para un entero corto. 
+    pid_t pidhijo, pidtermi __attribute__((unused));
     int status;
     pidhijo = fork();
     if (pidhijo > 0)
