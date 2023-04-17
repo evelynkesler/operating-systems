@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.py": "python",
+        "signal.h": "c",
+        "sigset_t.h": "c"
+    }
+}
